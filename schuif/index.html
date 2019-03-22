@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title>Inhoud schuift</title>
+	<meta name="author" content="Patrick Smalen">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/schuifmenu.css">
+	<style>
+		#toggleMenu:checked ~ main {
+			margin-left: 10em;
+		}
+		#toggleLabel::before {
+			content: "\2630";
+			cursor: pointer;
+		}
+		#toggleMenu:checked ~ main #toggleLabel::before {
+			content: "\2715";
+		}
+		nav {
+			position: fixed;
+		}
+
+		main {
+			position: absolute;
+			margin-left: 0;
+			transition: margin-left .6s cubic-bezier(.17,.67,.83,1.36);
+		}
+	</style>
+</head>
+
+<body lang="nl">
+	<input type="checkbox" id="toggleMenu">
+	<nav>
+		<h4>menu</h4>
+		<ul>
+			<li>
+				<a href="index.html" class="active">Inhoud &#128058; Wolf</a>
+			</li>
+			<li>
+				<a href="menuSchuift.html">Menu &#128039; Penguin</a>
+			</li>
+			<li>
+				<a href="allesSchuift.html">Alles &#129418; Desert Fox</a>
+			</li>
+			<li>
+				<a href="schuifinhoud.html">Rechts schuift &#129418; Black Jaguar</a>
+			</li>
+		</ul>
+	</nav>
+
+
+		<main>
+			<label for="toggleMenu" id="toggleLabel"></label>
+			<h1>Wolf</h1>
+			<p><img src=wolf.png alt="Een foto van een wolf">
+			</p>
+			<p>De wolf is een zoogdier uit de familie hondachtigen, die behoort tot de roofdieren. De wolf komt op het noordelijk halfrond voor. Er worden meerdere ondersoorten onderscheiden, waaronder enkele die zijn uitgestorven. De wolf leeft in groepen met een sociale structuur. De wolf is de voorouder van de hond
+			</p>
+			<p>Wolven hebben een kop-romplengte van 1 tot 1,5 m,[3] en een staart van 30 tot 50 cm. De schouderhoogte is 65 tot 80 cm. Vrouwtjes zijn zo'n tien procent kleiner dan mannetjes; mannetjes wegen 20 tot 80 kg, vrouwtjes worden gemiddeld 18 tot 50 kg zwaar.
+			</p>
+			<p> De wolf heeft in rust een hartslag van 90 slagen per minuut en een ademhalingsfrequentie van 15 tot 20 per minuut. Bij grote inspanning kan dit oplopen tot een hartslag van 200 per minuut en een ademhalingsfrequentie van 100 per minuut.
+			</p>
+			<p>Het gehoor, de reukzin en het zichtvermogen zijn goed ontwikkeld. Een wolf kan tegen de wind in andere dieren ontdekken die zich op een afstand van 300 meter van hem bevinden. Ook kan hij uitstekend zien in het donker. De wolf heeft een zichthoek van 250° (ter vergelijking: 180° bij mensen). De wolf kan tonen horen tot 40 kHz, tonen die te hoog zijn voor het menselijk gehoor. Speciale hondenfluitjes zijn ontwikkeld, die niet voor mensen, maar wel voor honden en wolven hoorbaar zijn.
+			</p>
+
+			<footer class="validatie">
+
+
+        <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+          <img src="http://blog.boyet.com/blog/files/media/image/valid-html5-blue.png" alt="Valide HTML5">
+        </a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+          <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+        </a>
+
+			</footer>
+
+			<p> Bron </p>
+
+			<a href="https://nl.wikipedia.org/wiki/Wolf">https://nl.wikipedia.org/wiki/Wolf</a>
+
+		</main>
+
+</body>
+</html>

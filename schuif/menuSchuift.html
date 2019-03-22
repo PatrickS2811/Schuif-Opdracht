@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title>Menu schuift</title>
+	<meta name="author" content="Patrick Smalen">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/schuifmenu.css">
+	<style>
+    #toggleMenu:checked ~ nav {
+    margin-left: 0em;
+    z-index: 1;
+
+  }
+    #toggleLabel::after {
+    content: "\2630";
+    cursor: pointer;
+  }
+	#toggleMenu:checked ~ main #toggleLabel::after{
+    content: "\2715";
+    margin-left: 5em;
+    transition: margin-left .6s cubic-bezier(.17,.67,.83,1.36);
+
+  }
+
+  nav{
+    position: fixed;
+    background: #333;
+    height: 100vh;
+    margin-left: -10em;
+    transition: margin-left .6s cubic-bezier(.17,.67,.83,1.36);
+
+    }
+
+    main{
+      position: absolute;
+        margin-left: 0;
+        transition: margin-left .6s cubic-bezier(.17,.67,.83,1.36);
+    }
+	</style>
+</head>
+
+<body lang="nl">
+	<input type="checkbox" id="toggleMenu">
+	<nav>
+		<h4>menu</h4>
+		<ul>
+			<li>
+				<a href="index.html">&#128058; Wolf</a>
+			</li>
+			<li>
+				<a href="menuSchuift.html" class="active">&#128039; Penguin</a>
+			</li>
+			<li>
+				<a href="allesSchuift.html">&#129418; Desert Fox</a>
+			</li>
+			<li>
+				<a href="schuifinhoud.html">Rechts schuift &#129418; Black Jaguar</a>
+			</li>
+		</ul>
+	</nav>
+
+
+		<main>
+			<label for="toggleMenu" id="toggleLabel"></label>
+			<h1>Penguin</h1>
+			<p><img src=penguin.jpg alt="Een foto van een penguin">
+			</p>
+			<p>Penguins (order Sphenisciformes, family Spheniscidae) are a group of aquatic flightless birds. They live almost exclusively in the Southern Hemisphere, with only one species, the Galapagos penguin, found north of the equator. Highly adapted for life in the water, penguins have countershaded dark and white plumage, and their wings have evolved into flippers. Most penguins feed on krill, fish, squid and other forms of sea life which they catch while swimming underwater. They spend roughly half of their lives on land and the other half in the sea. 
+			</p>
+			<p>Although almost all penguin species are native to the Southern Hemisphere, they are not found only in cold climates, such as Antarctica. In fact, only a few species of penguin live so far south. Several species are found in the temperate zone, and one species, the Galápagos penguin, lives near the equator. 
+			</p>
+			<p>The largest living species is the emperor penguin (Aptenodytes forsteri):[1] on average, adults are about 1.1 m (3 ft 7 in) tall and weigh 35 kg (77 lb). The smallest penguin species is the little blue penguin (Eudyptula minor), also known as the fairy penguin, which stands around 40 cm (16 in) tall and weighs 1 kg (2.2 lb). Among extant penguins, larger penguins inhabit colder regions, while smaller penguins are generally found in temperate or even tropical climates (see also Bergmann's rule)
+			</p>
+			<p> Some prehistoric species attained enormous sizes, becoming as tall or as heavy as an adult human. These were not restricted to Antarctic regions; on the contrary, subantarctic regions harboured high diversity, and at least one giant penguin occurred in a region around 2,000 km south of the equator 35 mya, in a climate decidedly warmer than today.[which?]
+			</p>
+
+			<footer class="validatie">
+
+
+        <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+          <img src="http://blog.boyet.com/blog/files/media/image/valid-html5-blue.png" alt="Valide HTML5">
+        </a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+          <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+        </a>
+
+			</footer>
+
+			<p> Bron </p>
+
+			<a href="https://en.wikipedia.org/wiki/Penguin">https://en.wikipedia.org/wiki/Penguin</a>
+
+		</main>
+
+</body>
+</html>
